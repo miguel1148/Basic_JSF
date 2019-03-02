@@ -2,11 +2,21 @@ package br.com.cursojsf;
 
 import javax.faces.bean.ManagedBean;
 
-@ManagedBean(name = "pessoaBean")
+@ManagedBean(name = "pessoaBean")//
 public class PessoaBean {
 	
 	private String nome;
 	private String sobreNome;
+	
+	private String nomeCompleto;
+	
+	
+	
+	public String getNomeCompleto() {
+		this.nomeCompleto = nome + " " + sobreNome;
+		return nomeCompleto;
+	}
+	
 	
 	
 	public String getNome() {
