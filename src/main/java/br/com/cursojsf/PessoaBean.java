@@ -30,7 +30,9 @@ public class PessoaBean {
 	public String addNome() {
 		nomes.add(nome);
 		if(nomes.size() > 3) {
-			return "paginaNavegada";//navegação dinâmica
+	//		return "paginaNavegada";//navegação dinâmica
+			
+			return "paginaNavegada?faces-redirect=true";//Redirecionamento
 		}
 		
 		return "";
