@@ -20,9 +20,11 @@ import javax.faces.component.html.HtmlCommandButton;
 public class PessoaBean {
 	
 	private String nome;
-	
+	private String senha;
+	private String texto;
 	
 	private HtmlCommandButton commandButton;
+	
 	private List<String> nomes = new ArrayList<String>();
 	
 	
@@ -59,6 +61,24 @@ public class PessoaBean {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	
+	
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}
 	
 	

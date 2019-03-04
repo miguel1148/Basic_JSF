@@ -4,7 +4,16 @@
 		xmlns:h="http://java.sun.com/jsf/html">
 		
 <h:head>
-	<title>Olá JSF Navegação Dinâmica</title>
+	<title>Olá JSF</title>
+	
+	<script>
+		function alterarValorDoCampo() {
+			var campo = document.getElementById('formPessoa:nome');
+			campo.value = 'eu clickei no campo ;)';
+		}	
+	
+	</script>
+	
 </h:head>
 
 <h:body>
@@ -12,7 +21,13 @@
 	
 	
 	<h:form id="formPessoa">
-		<h1>OLÁ JSF</h1>
+		<h1>OLÁ JSF página index.jsf</h1>
+		
+		<h:inputText id="nome" onclick="this.value='troquei o valor'" />
+		<h:commandButton value="Clicar" onclick="alterarValorDoCampo();"/>
+		
+		<br/>
+		<br/>
 		<h:commandButton value="Navegar" action="PrimeiraPage"/>
 		
 		
